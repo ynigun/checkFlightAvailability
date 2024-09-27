@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>בודק זמינות טיסות</title>
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial, sans-serif; }
+    textarea { width: 100%; height: 100px; }
+    .date-range { display: flex; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <h2>בודק זמינות טיסות</h2>
+  <label for="airportCodes">הזן קודי שדות תעופה (אחד בכל שורה):</label><br>
+  <textarea id="airportCodes"></textarea><br>
+  <div class="date-range">
+    <div>
+      <label for="startDate">תאריך התחלה:</label>
+      <input type="date" id="startDate">
+    </div>
+    <div>
+      <label for="endDate">תאריך סיום:</label>
+      <input type="date" id="endDate">
+    </div>
+  </div>
+  <br>
+  <button id="checkFlights">בדוק טיסות</button>
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
